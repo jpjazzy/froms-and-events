@@ -1,1 +1,43 @@
 /* App styles */
+body {
+  font-family: helvetica;
+}
+
+fieldset {
+  padding: 20px;
+}
+
+input[type="text"] {
+  padding: 7px;
+  border: solid 1px black;
+  border-radius: 3px;
+}
+
+input[type="text"]:focus {
+  background: black;
+  color: white;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 3px;
+  border: done;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+  margin-left: 20px;
+}
+
+thead {
+  background: #888
+}
+
+td, th {
+  padding: 20px;
+  border: solid 1px black;
+}
