@@ -7,7 +7,44 @@
   </head>
   <body>
     <!-- Content goes here -->
+    <form id="sample_form">
+      <fieldset>
+        <label for="first">first name:</label>
+        <input type="text" name="first" placeholder="enter your first name" required />
+      </fieldset>
+      <fieldset>
+        <label for="last">last name:</label>
+        <input type="text" name="last" placeholder="enter your last name" required />
+      </fieldset>
+      <fieldset>
+        <label for="enrolled">currently enrolled?</label>
+        <input type="checkbox" name="enrolled" value="enrolled" />
+      </fieldset>
+      <fieldset>
+        <label for="future_classes">interested in future classes?</label>
+        <input type="radio" name="future_classes" value="yes" />Yes
+        <input type="radio" name="future_classes" value="no" />No
+      </fieldset>
 
+      <button id="submit_btn" type="submit">add student</button>
+    </form>
+
+    <section id="students">
+      <table>
+        <thead>
+          <th>First name:</th>
+          <th>Last name:</th>
+          <th>Enrolled</th>
+          <th>Interested in future classes?</th>
+        </thead>
+        <tbody id="student_table">
+          <!-- student table data goes here -->
+        </tbody>
+      </table>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
+
+<!-- bod.style.display='style'
+    bod.getAttribute(att)
